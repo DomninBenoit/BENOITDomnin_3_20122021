@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-size: 3rem;
+  text-align: center;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-shrikhand;
+  }
+  p, input, span {
+    font-family: $font-roboto;
+    margin: 5%;
+  }
+}
+
+.txt {
+  margin-top: 0;
+  padding-top: 5%;
+  font-size: 1rem;
+
+  &__bold {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+}
+
+
