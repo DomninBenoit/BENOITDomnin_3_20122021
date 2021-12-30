@@ -1,0 +1,84 @@
+.card {
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  border-radius: 40px;
+  box-sizing: content-box;
+  background-color: white;
+  margin: 75px 5% 0 5%;
+  box-shadow: 5px 5px 10px lightgrey;
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+
+}
+
+.img-bloc {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  p {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    font-size: 2.5rem;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    background-color: $color-tertiary;
+    color: green;
+  }
+}
+
+.sous_card {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  .far {
+    display: block;
+    margin-top: 40px;
+    font-size: 4rem;
+    width: 20%;
+
+  }
+
+  .fas {
+    display: none;
+  }
+
+  :hover {
+    .far {
+      display: none;
+    }
+
+    .fas {
+      display: block;
+      margin-top: 40px;
+      font-size: 4rem;
+      width: 20%;
+    }
+  }
+}
+
+.txt_card {
+  width: 80%;
+  text-align: left;
+  margin-top: 30px;
+  .txt {
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 3rem;
+
+  }
+}
+

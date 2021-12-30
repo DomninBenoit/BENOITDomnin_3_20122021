@@ -1,0 +1,18 @@
+.entrees {
+
+  .txt {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 0 5% 0 5%;
+    padding-top: 2%;
+
+  }
+  .ligne-horiz {
+    margin: 10px 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    width: 110px;
+    height: 8px;
+    background-color: $color-tertiary;
+  }
+}

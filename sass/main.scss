@@ -1,6 +1,7 @@
-@import "./2_utils/_utils.scss";
-@import "./1_Base/_base.scss";
-@import "./3_Layout/_header.scss";
-@import "./3_Layout/_middle.scss";
-@import "./3_Layout/_footer.scss";
-@import "./4_Composants/_component.scss";
+@import "./utils/_utils.scss", "./Utils/_mixin.scss";
+@import "./Base/_base.scss";
+@import "./Layout/_header.scss";
+@import "./Layout/_middle.scss";
+@import "./Layout/_footer.scss";
+@import "./Composants/_btn.scss", "./Composants/_coche.scss", "./Composants/_card.scss" ;
+@import "./Pages/_img-entete.scss", "./Pages/_entrees.scss", "./Pages/_choix.scss";

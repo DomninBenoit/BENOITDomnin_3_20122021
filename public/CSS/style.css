@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -16,24 +16,45 @@ body p, body input, body span {
 .txt {
   margin-top: 0;
   padding-top: 5%;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .txt__bold {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .txt__bold {
+    font-size: 2rem;
+  }
+}
+
+.padding-bloc {
+  padding: 50px 0 50px 0;
 }
 
 header {
   text-align: center;
+  background-color: white;
+}
+header h1 {
+  margin: 0;
+  padding: 20px 0 20px 0;
 }
 header a {
   text-decoration: none;
   color: black;
 }
 header .title {
-  padding: 0.1rem;
+  padding: 0;
   box-shadow: 0 0 15px black;
-  margin: 0 0 10px 0;
+}
+
+.return {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 3.5rem;
+  display: block;
 }
 
 .research {
@@ -41,9 +62,9 @@ header .title {
   padding: 0;
 }
 .research input {
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: lightgrey;
-  border: 0;
+  border: none;
   width: 40%;
 }
 .research input::placeholder {
@@ -52,7 +73,13 @@ header .title {
 
 .explorate {
   background-color: #f6f6f6;
-  padding: 8%;
+  padding-bottom: 30px;
+}
+.explorate .txt {
+  padding-top: 1%;
+}
+.explorate .txt__bold {
+  padding: 5% 10% 0 10%;
 }
 
 .mini_title {
@@ -98,50 +125,58 @@ footer span {
 }
 
 .btn {
-  width: 65%;
-  height: 150px;
+  width: 60%;
+  height: 130px;
   border-radius: 150px;
   background: linear-gradient(0.48turn, #FF79DA, #9356DC);
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
   border: none;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 8px lightgrey;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 .btn:hover {
   filter: brightness(1.25);
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 15px grey;
+}
+
+.btn__menu {
+  width: 50%;
+  margin-top: 50px;
+  border: 5px black;
 }
 
 .num {
-  width: 50px;
-  height: 80px;
+  width: 30px;
+  height: 60px;
   border-radius: 60px;
   padding: 15px 22px 0 22px;
   background-color: #9356DC;
   position: absolute;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-left: -40px;
   color: white;
 }
 
 .coche {
   width: 85%;
-  height: 250px;
-  font-size: 2.5rem;
+  height: 200px;
+  font-size: 2rem;
   border-radius: 60px;
   background: #f6f6f6;
+  border: none;
 }
 .coche i {
   padding-right: 50px;
   padding-left: 50px;
   color: grey;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .coche span {
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   align-items: center;
 }
 
@@ -156,33 +191,63 @@ footer span {
 .card {
   align-items: center;
   width: 90%;
-  height: 700px;
+  height: 600px;
   border-radius: 40px;
   box-sizing: content-box;
   background-color: white;
   margin: 75px 5% 0 5%;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px lightgrey;
 }
-.card img {
+.card a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.img-bloc {
+  position: relative;
+}
+.img-bloc img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+.img-bloc p {
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  font-size: 2.5rem;
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  background-color: #99E2D0;
+  color: green;
 }
 
 .sous_card {
   display: flex;
   flex: 2;
   flex-direction: row;
+  text-decoration: none;
+  color: black;
 }
-.sous_card i {
+.sous_card .far {
+  display: block;
   margin-top: 40px;
   font-size: 4rem;
   width: 20%;
 }
-.sous_card i:hover {
-  fill: linear-gradient(0.48turn, #FF79DA, #9356DC);
+.sous_card .fas {
+  display: none;
+}
+.sous_card :hover .far {
+  display: none;
+}
+.sous_card :hover .fas {
+  display: block;
+  margin-top: 40px;
+  font-size: 4rem;
+  width: 20%;
 }
 
 .txt_card {
@@ -194,6 +259,141 @@ footer span {
   padding: 0;
   margin-bottom: 10px;
   font-size: 3rem;
+}
+
+.pages {
+  background-color: #f6f6f6;
+}
+
+.img_menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.entete {
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: -150px;
+}
+.entete .title {
+  width: 80%;
+  font-size: 3rem;
+  margin: 0;
+}
+.entete .card_icon {
+  width: 20%;
+}
+.entete .far {
+  display: block;
+  margin: 10px 0 0 30px;
+  font-size: 4rem;
+  width: 20%;
+}
+.entete .fas {
+  display: none;
+}
+.entete :hover .far {
+  display: none;
+}
+.entete :hover .fas {
+  display: block;
+  margin: 10px 0 0 30px;
+  font-size: 4rem;
+  width: 20%;
+}
+
+.entrees .txt {
+  text-align: left;
+  font-size: 2.5rem;
+  margin: 0 5% 0 5%;
+  padding-top: 2%;
+}
+.entrees .ligne-horiz {
+  margin: 10px 5% 0 5%;
+  display: flex;
+  flex-direction: row;
+  width: 110px;
+  height: 8px;
+  background-color: #99E2D0;
+}
+
+.choix {
+  margin: 0;
+  padding: 0;
+}
+
+.repas {
+  height: 175px;
+  background-color: #fff;
+  border-radius: 35px;
+  margin: 35px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
+}
+.repas .txt__bold {
+  font-size: 3rem;
+  text-align: left;
+  margin: 20px 0 10px 35px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.repas:hover {
+  padding-right: 200px;
+}
+.repas:hover .cross {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.repas:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 150px;
+  height: 175px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+}
+.cross .fa-check-circle {
+  color: #fff;
+  transition: transform 500ms ease-in-out;
+}
+
+.last__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+}
+.last__line p {
+  margin: 0 0 10px 35px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.last__line span {
+  margin: 0 15px 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+.btn {
+  width: 60%;
+  height: 130px;
+  border-radius: 150px;
+  background: linear-gradient(0.48turn, $color-secondary, $color-primary);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  box-shadow: 5px 5px 8px lightgrey;
+  margin-bottom: 100px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.25);
+    box-shadow: 10px 10px 15px grey;
+  }
+}
+
+.btn__menu {
+  width: 50%;
+  margin-top: 50px;
+  border: 5px black;
+}
