@@ -42,3 +42,25 @@
   }
 
 }
+
+@include desktop {
+
+.num {
+  width: 0;
+  height: 30px;
+  font-size: 1rem;
+  margin: 50px 0 0 10px;
+}
+  .coche {
+    width: 30vw;
+    height: 100px;
+    margin: 20px 0 20px 20px;
+
+    i {
+      font-size: 1.5rem;
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
+}

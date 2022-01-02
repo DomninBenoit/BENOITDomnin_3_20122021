@@ -22,3 +22,11 @@
   margin-top: 50px;
   border: 5px black;
 }
+
+@include desktop {
+  .btn {
+    width: 20%;
+    height: 50px;
+    font-size: 1rem;
+  }
+}

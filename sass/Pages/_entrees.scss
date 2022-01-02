@@ -16,3 +16,13 @@
     background-color: $color-tertiary;
   }
 }
+ @include desktop {
+   .entrees {
+     .txt {
+       font-size: 1.5rem;
+     }
+     .ligne-horiz {
+       width: 55px;
+     }
+   }
+ }

@@ -1,3 +1,11 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -22,16 +30,21 @@ body p, body input, body span {
   font-weight: bold;
   font-size: 3.5rem;
 }
-@media screen and (min-width: 768px) {
-  .txt__bold {
-    font-size: 2rem;
-  }
-}
 
 .padding-bloc {
   padding: 50px 0 50px 0;
 }
 
+@media screen and (min-width: 992px) {
+  .txt {
+    padding-top: 0;
+    margin-bottom: 2%;
+    font-size: 1rem;
+  }
+  .txt__bold {
+    font-size: 1.5rem;
+  }
+}
 header {
   text-align: center;
   background-color: white;
@@ -57,6 +70,16 @@ header .title {
   display: block;
 }
 
+@media screen and (min-width: 992px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .return {
+    top: 35px;
+    font-size: 1.5rem;
+  }
+}
 .research {
   background-color: lightgrey;
   padding: 0;
@@ -69,6 +92,13 @@ header .title {
 }
 .research input::placeholder {
   color: black;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .research input {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
 }
 
 .explorate {
@@ -91,6 +121,19 @@ header .title {
   padding-bottom: 200px;
 }
 
+@media screen and (min-width: 992px) {
+  .bloc_fonctionnement {
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .restos_bloc {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+  }
+}
 footer {
   background-color: #353535;
   margin: 0;
@@ -124,6 +167,25 @@ footer span {
   margin: 0;
 }
 
+@media screen and (min-width: 992px) {
+  footer {
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  footer h3 {
+    padding-top: 20px;
+  }
+  footer i {
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  footer li {
+    margin-bottom: 10px;
+  }
+}
 .btn {
   width: 60%;
   height: 130px;
@@ -148,6 +210,13 @@ footer span {
   border: 5px black;
 }
 
+@media screen and (min-width: 992px) {
+  .btn {
+    width: 20%;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
 .num {
   width: 30px;
   height: 60px;
@@ -188,6 +257,26 @@ footer span {
   color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .num {
+    width: 0;
+    height: 30px;
+    font-size: 1rem;
+    margin: 50px 0 0 10px;
+  }
+
+  .coche {
+    width: 30vw;
+    height: 100px;
+    margin: 20px 0 20px 20px;
+  }
+  .coche i {
+    font-size: 1.5rem;
+  }
+  .coche span {
+    font-size: 1rem;
+  }
+}
 .card {
   align-items: center;
   width: 90%;
@@ -248,6 +337,7 @@ footer span {
   margin-top: 40px;
   font-size: 4rem;
   width: 20%;
+  color: #9356DC;
 }
 
 .txt_card {
@@ -261,6 +351,30 @@ footer span {
   font-size: 3rem;
 }
 
+@media screen and (min-width: 992px) {
+  .img-bloc p {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    height: 400px;
+  }
+
+  .img-bloc img {
+    height: 250px;
+  }
+
+  .txt_card .txt {
+    font-size: 1.5rem;
+  }
+
+  .sous_card .far {
+    font-size: 2.5rem;
+  }
+  .sous_card:hover .fas {
+    font-size: 2.5rem;
+  }
+}
 .pages {
   background-color: #f6f6f6;
 }
@@ -306,8 +420,29 @@ footer span {
   margin: 10px 0 0 30px;
   font-size: 4rem;
   width: 20%;
+  color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .img_menu img {
+    height: 300px;
+  }
+
+  .entete {
+    margin-top: -75px;
+  }
+  .entete .title {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 100px;
+  }
+  .entete .far {
+    font-size: 2.5rem;
+  }
+  .entete:hover .fas {
+    font-size: 2.5rem;
+  }
+}
 .entrees .txt {
   text-align: left;
   font-size: 2.5rem;
@@ -323,9 +458,33 @@ footer span {
   background-color: #99E2D0;
 }
 
+@media screen and (min-width: 992px) {
+  .entrees .txt {
+    font-size: 1.5rem;
+  }
+  .entrees .ligne-horiz {
+    width: 55px;
+  }
+}
 .choix {
   margin: 0;
   padding: 0;
+}
+
+.duration-1 {
+  animation: fadein 1s ease-in-out;
+}
+
+.duration-2 {
+  animation: fadein 2s ease-in-out;
+}
+
+.duration-3 {
+  animation: fadein 3s ease-in-out;
+}
+
+.duration-4 {
+  animation: fadein 4s ease-in-out;
 }
 
 .repas {
@@ -394,6 +553,39 @@ footer span {
 }
 .last__line span {
   margin: 0 15px 0 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    margin: 0 100px 0 100px;
+  }
+
+  .choix {
+    width: 29vw;
+    font-size: 1rem;
+  }
+  .choix .txt__bold {
+    font-size: 1.2rem;
+    margin: 10px 0 0 5px;
+  }
+
+  .last__line p {
+    margin: 10px 0 0 5px;
+  }
+
+  .repas {
+    border-radius: 20px;
+    height: 70px;
+  }
+  .repas:hover {
+    padding-right: 28%;
+  }
+
+  .cross {
+    height: 80px;
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

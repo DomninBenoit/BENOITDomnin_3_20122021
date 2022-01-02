@@ -66,6 +66,7 @@
       margin-top: 40px;
       font-size: 4rem;
       width: 20%;
+      color: $color-primary;
     }
   }
 }
@@ -82,3 +83,33 @@
   }
 }
 
+@include desktop {
+  .img-bloc {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+.card {
+  height: 400px;
+}
+  .img-bloc {
+    img {
+      height: 250px;
+    }
+  }
+  .txt_card{
+    .txt {
+      font-size: 1.5rem;
+    }
+  }
+  .sous_card {
+    .far {
+      font-size: 2.5rem;
+    }
+    &:hover {
+      .fas {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

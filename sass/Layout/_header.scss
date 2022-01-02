@@ -1,6 +1,7 @@
 header {
   text-align: center;
   background-color: white;
+
   h1 {
     margin: 0;
     padding: 20px 0 20px 0;
@@ -10,6 +11,7 @@ header {
     text-decoration: none;
     color: black;
   }
+
   .title {
     padding: 0;
     box-shadow: 0 0 15px black;
@@ -27,3 +29,14 @@ header {
 }
 
 
+@include desktop {
+  header {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .return {
+    top: 35px;
+    font-size: 1.5rem;
+  }
+}

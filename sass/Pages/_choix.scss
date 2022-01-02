@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+.duration-1 {
+  animation: fadein 1s ease-in-out;
+}
+.duration-2 {
+  animation: fadein 2s ease-in-out;
+}
+.duration-3 {
+  animation: fadein 3s ease-in-out;
+}
+.duration-4 {
+  animation: fadein 4s ease-in-out;
+}
+
 .repas {
   height: 175px;
   background-color: #fff;
@@ -79,3 +92,37 @@
   }
 }
 
+@include desktop {
+  .menu {
+    display: flex;
+    margin: 0 100px 0 100px;
+
+  }
+  .choix {
+    width: 29vw;
+    font-size: 1rem;
+    .txt__bold {
+      font-size: 1.2rem;
+      margin: 10px 0 0 5px;
+    }
+  }
+  .last__line {
+    p {
+        margin: 10px 0 0 5px;
+    }
+  }
+  .repas {
+    border-radius: 20px;
+    height: 70px;
+    &:hover {
+      padding-right: 28%;
+    }
+  }
+  .cross {
+    height: 80px;
+    width: 20%;
+
+  }
+
+
+}

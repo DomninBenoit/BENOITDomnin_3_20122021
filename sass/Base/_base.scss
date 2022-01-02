@@ -18,12 +18,10 @@ body {
   padding-top: 5%;
   font-size: 1.5rem;
 
+
   &__bold {
     font-weight: bold;
     font-size: 3.5rem;
-    @include tablette {
-      font-size: 2rem;
-    }
   }
 }
 
@@ -31,3 +29,13 @@ body {
   padding: 50px 0 50px 0;
 }
 
+@include desktop {
+  .txt {
+    padding-top: 0;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    &__bold {
+      font-size: 1.5rem;
+    }
+  }
+}
