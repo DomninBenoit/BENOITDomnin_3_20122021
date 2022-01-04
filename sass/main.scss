@@ -1,7 +1,5 @@
 @import "./utils/_utils.scss", "./Utils/_mixin.scss", "./Utils/_keyframes.scss";
 @import "./Base/_base.scss";
-@import "./Layout/_header.scss";
-@import "./Layout/_middle.scss";
-@import "./Layout/_footer.scss";
+@import "./Layout/_loader.scss", "./Layout/_header.scss", "./Layout/_middle.scss", "./Layout/_footer.scss"  ;
 @import "./Composants/_btn.scss", "./Composants/_coche.scss", "./Composants/_card.scss" ;
 @import "./Pages/_img-entete.scss", "./Pages/_entrees.scss", "./Pages/_choix.scss";

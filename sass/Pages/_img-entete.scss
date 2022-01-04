@@ -50,7 +50,9 @@
       margin: 10px 0 0 30px;
       font-size: 4rem;
       width: 20%;
-      color: $color-primary;
+      background: linear-gradient(40deg, #ff79da, #9356dc);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
     }
   }
 }

@@ -6,6 +6,25 @@
     opacity: 1;
   }
 }
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -45,6 +64,35 @@ body p, body input, body span {
     font-size: 1.5rem;
   }
 }
+.loader {
+  background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader__title {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+}
+@media screen and (min-width: 992px) {
+  .loader__title {
+    top: 38%;
+    left: 44%;
+  }
+}
+
+.loader__icon {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate 1s linear infinite;
+}
+
 header {
   text-align: center;
   background-color: white;
@@ -336,8 +384,10 @@ footer span {
   display: block;
   margin-top: 40px;
   font-size: 4rem;
-  width: 20%;
-  color: #9356DC;
+  width: 100%;
+  background: linear-gradient(40deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .txt_card {
@@ -420,7 +470,9 @@ footer span {
   margin: 10px 0 0 30px;
   font-size: 4rem;
   width: 20%;
-  color: #9356DC;
+  background: linear-gradient(40deg, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (min-width: 992px) {
