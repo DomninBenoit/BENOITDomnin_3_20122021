@@ -65,12 +65,13 @@ body p, body input, body span {
   }
 }
 .loader {
-  background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#99E2D0, #FF79DA, #9356DC, white);
   width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 9999;
   animation: loader 1s ease-in-out 3s forwards;
+  pointer-events: none;
 }
 
 .loader__title {
