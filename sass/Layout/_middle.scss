@@ -13,6 +13,7 @@
       color: black;
       text-align: center;
     }
+
     @include desktop {
       font-size: 1.5rem;
       margin: 20px;
@@ -43,6 +44,15 @@
 }
 
 @include desktop {
+  .research {
+    input {
+      width: 20%;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
   .bloc_fonctionnement {
     display: flex;
     flex: 1;
